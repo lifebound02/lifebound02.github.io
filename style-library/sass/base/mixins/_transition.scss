@@ -1,8 +1,0 @@
-@mixin transition($element: all, $time: .2s, $timing: ease-in-out) {
-	transition: $element $time $timing;
-	transition-delay: 0;
-}
-
-%transition {
-    @include transition(all, .2s, ease-in-out);
-}

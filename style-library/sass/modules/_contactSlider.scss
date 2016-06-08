@@ -1,9 +1,0 @@
-.contactSlider {
-	margin-top: 0;
-    img {
-        min-width: 100%;
-    }
-    @include media(1100px) {
-    	margin-top: $spacingXLg;
-    }
-}
