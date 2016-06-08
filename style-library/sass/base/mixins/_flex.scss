@@ -1,0 +1,14 @@
+@mixin flex {
+    display: flex;
+}
+
+@mixin inlineFlex {
+    display: inline-flex;
+}
+
+%flex {
+    @include flex;
+}
+%inlineFlex {
+    @include inlineFlex;
+}

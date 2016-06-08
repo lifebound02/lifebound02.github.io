@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<!-- meta -->
+	<% var title = "Life Bound - Academic Coaching"; %>
+	<%- include partials/meta.ejs %>
+	<!-- /meta -->
+</head>
+<body>
+	<%- include partials/header-main.ejs %>
+	<% var page = "resources"; %>
+	<%- include partials/nav-main.ejs %>
+	<main>
+		<section>
+			<div class="row">
+				<div class="column">
+					<h2 class="underlined underlined--dot">Resources</h2>
+				</div>
+				<div class="column">
+					<p class="h-isolateBottom--sm">LifeBound publishes print and digital resources for 5<sup>th</sup> grade through college.</p>
+					<figure class="figure noMax">
+						<img src="image-library\resources-content\staircase.png">
+					</figure>
+					<p class="lead">Accompanying Curricula Available</p>
+					<p>To order books and curricula call <a href="tel:3033275688">303-327-5688</a>.</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="column">
+					<h2 class="underlined underlined--dot">LifeBound developes customized content to meet your needs</h2>
+					<p class="lead">Clients Include:</p>
+					<p>
+						<ul>
+							<li>Goodwill Industries</li>
+							<li>Glencoe</li>
+							<li>McGraw Hill</li>
+							<li>Pearson, among others.</li>
+						</ul>
+					</p>
+				</div>
+				<div class="column">
+					<p class="lead h-isolateBottom--sm">Module Example:</p>
+					<figure class="figure noMax h-isolateBottom">
+						<img src="image-library\resources-content\goodwill-module.png">
+					</figure>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="column">
+					<div class="testimonialSlider">
+						<div>
+							<p class="h-h4">"This was very informative and enjoyable. I loved all the resources/books, etc. and the powerful stories you shared!"</p>
+							<p class="h-h6">- Faculty, Genesee Community College</p>
+						</div>
+						<div>
+							<p class="h-h4">"<em>Gifts and Talents for Teenagers</em> is a must-read for every teenager. It shows not only how to tap talent, but the countless ways these gifts can be manifested in our richly diverse world."</p>
+							<p class="h-h6">- Former President, American School Counselor Association</p>
+						</div>
+						<div>
+							<p class="h-h4">"This program was excellent and really gives me new tools to use to help students be successful both academically and in their own lives."</p>
+							<p class="h-h6">- Registrar, Northwestern Connecticut Community College</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<%- include partials/footer-main.ejs %>
+	<script type="text/javascript">
+		$('.lightbox').magnificPopup({
+          type: 'image',
+          closeOnContentClick: true,
+          image: {
+            verticalFit: true
+          }
+		});
+	</script>
+</body>
+</html>

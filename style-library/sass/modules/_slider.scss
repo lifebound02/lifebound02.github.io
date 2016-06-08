@@ -1,0 +1,166 @@
+
+.mainBanner {
+    position: relative;
+
+    .slick-track {
+        position: relative;
+
+        overflow: hidden;
+
+        height: 500px;
+
+        @include media(med) {
+            height: 600px;
+        }
+
+        .slick-slide {
+
+            position: relative;
+            z-index: 1;
+
+            overflow: hidden;
+
+            justify-content: center;
+
+            width: 100%;
+            height: 100%;
+
+            outline: none;
+
+            picture {
+                position: relative;
+
+                flex: 1 0 auto;
+
+                min-width: 100%;
+                max-width: none;
+                min-height: 100%;
+                max-height: none;
+            }
+            .mainBanner-container {
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+
+                width: 100%;
+                height: 100%;
+
+                outline: none;
+                background: transparent;
+
+                .mainBanner-content {
+                    @extend %contained;
+
+                    position: relative;
+
+                    height: 100%;
+
+                    .mainBanner-message {
+                        position: absolute;
+                        bottom: 0;
+
+                        display: inline-block;
+
+                        width: 100%;
+                        margin: 0;
+                        padding: $spacingSm $spacingBase;
+
+                        color: $colorGreyLightest;
+                        background: $colorGreyDarkest;
+
+                        @include media(med) {
+                            width: auto;
+                            margin: 50px $spacingBase;
+                            padding: $spacingXLg;
+
+                            background: rgba($colorGreyDarkest, .85);
+
+                            &--topLeft {
+                                top: 0;
+                                right: auto;
+                                bottom: auto;
+                                left: 0;
+                            }
+                            &--centerLeft {
+                                top: 30%;
+                                right: auto;
+                                bottom: auto;
+                                left: 0;
+                            }
+                            &--bottomLeft {
+                                top: auto;
+                                right: auto;
+                                bottom: 0;
+                                left: 0;
+                            }
+                            &--topMiddle {
+                                top: 0;
+                                right: auto;
+                                bottom: auto;
+                                left: 25%;
+                            }
+                            &--centerMiddle {
+                                top: 30%;
+                                right: auto;
+                                bottom: auto;
+                                left: 25%;
+                            }
+                            &--bottomMiddle {
+                                top: auto;
+                                right: auto;
+                                bottom: 0;
+                                left: 25%;
+                            }
+                            &--topRight {
+                                top: 0;
+                                right: 0;
+                                bottom: auto;
+                                left: auto;
+                            }
+                            &--centerRight {
+                                top: 30%;
+                                right: 0;
+                                bottom: auto;
+                                left: auto;
+                            }
+                            &--bottomRight {
+                                top: auto;
+                                right: 0;
+                                bottom: 0;
+                                left: auto;
+                            }
+                        }
+
+                        h2 {
+                            @include fontSize(24px);
+
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: $spacingBase;
+
+                            @include media(xsm-only) {
+                                overflow: hidden;
+
+                                margin-left: $spacingSm;
+
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        p {
+                            @include fontSize(18px);
+
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+}

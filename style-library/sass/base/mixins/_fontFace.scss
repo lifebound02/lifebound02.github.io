@@ -1,0 +1,10 @@
+@mixin fontFace($name, $file, $weight: normal) {
+    @font-face {
+        font-family: #{$name};
+        font-weight: #{$weight};
+        font-style: normal;
+
+        src: url('#{$fontPath}#{$file}.woff') format('woff'),
+        	 url('#{$fontPath}#{$file}.svg') format('svg');
+    }
+}

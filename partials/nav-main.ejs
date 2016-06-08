@@ -1,0 +1,12 @@
+<% var active = 'class="active"'; %>
+<nav class="navMain">
+	<div class="mobileToggle icon-menu">Menu</div>
+	<ul>
+		<li><a href="index.html" <% if (page == "home") { %> <%- active %> <% } %>>Home</a></li>
+		<li><a href="about.html" <% if (page == "about") { %> <%- active %> <% } %>>About Us</a></li>
+		<li><a href="training.html" <% if (page == "training") { %> <%- active %> <% } %>>Training</a></li>
+		<li><a href="resources.html" <% if (page == "resources") { %> <%- active %> <% } %>>Resources</a></li>
+		<li><a href="consulting.html" <% if (page == "consulting") { %> <%- active %> <% } %>>Consulting</a></li>
+		<li><a href="contact.html" <% if (page == "contact") { %> <%- active %> <% } %>>Contact Us</a></li>
+	</ul>
+</nav>

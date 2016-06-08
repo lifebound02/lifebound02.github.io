@@ -1,0 +1,22 @@
+.footerMain {
+    @extend %flex;
+
+    position: relative;
+
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 3px;
+    padding: $spacingBase;
+
+    color: $colorGreyLightest;
+    background: $colorBrand1;
+
+    h5 {
+        margin: $spacingBase 0;
+
+        text-align: center;
+    }
+}

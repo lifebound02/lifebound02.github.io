@@ -1,0 +1,11 @@
+a {
+    @include transition(color);
+
+    text-decoration: none;
+
+    color: inherit;
+
+    &:hover {
+        color: $colorBrand2;
+    }
+}

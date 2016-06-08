@@ -1,0 +1,7 @@
+@mixin fontSize($size, $height:true){
+    font-size:$size;
+    font-size:($size / $fontSizeBase)*1rem;
+    @if $height == true{
+        line-height:ceil($size / $lineHeight) * ($lineHeight / $size);
+    }
+}

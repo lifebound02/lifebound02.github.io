@@ -1,0 +1,50 @@
+.figure {
+    position: relative;
+
+    display: block;
+
+    margin: 0;
+
+    @include media(lg) {
+        max-width: 25%;
+    }
+
+    &.noMax {
+        @include media(lg) {
+            max-width: none;
+        }
+    }
+
+    &.fifty {
+        @include media(lg) {
+            max-width: 50%;
+        }
+    }
+
+    img {
+        position: relative;
+
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%;
+    }
+    figcaption {
+        @include fontSize(14px);
+
+        position: static;
+
+        caption-side: bottom;
+
+        text-align: center;
+        font-style: italic;
+
+        color: $colorGreyDark;
+    }
+    &.captionTop {
+        figcaption {
+            caption-side: top;
+        }
+    }
+}

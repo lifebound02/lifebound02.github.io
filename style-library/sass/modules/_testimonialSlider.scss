@@ -1,0 +1,18 @@
+.testimonialSlider.slick-slider {
+    min-width: 100%;
+    padding: $spacingLg 0;
+
+    .slick-dots {
+        position: absolute;
+        top: -7px;
+        bottom: auto;
+    }
+    div.slick-list {
+        div.slick-track {
+
+            div.slick-slide {
+                text-align: center;
+            }
+        }
+    }
+}

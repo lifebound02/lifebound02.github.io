@@ -1,0 +1,550 @@
+[class^='icon-'],
+[class*=' icon-'] {
+    &:before {
+        @extend %iconStyle;
+    }
+}
+
+.icon-phone:before {
+    content: '\e800';
+} /* '' */
+.icon-attention:before {
+    content: '\e812';
+} /* '' */
+.icon-calendar:before {
+    content: '\e819';
+} /* '' */
+.icon-cancel-circled:before {
+    content: '\e80a';
+} /* '' */
+.icon-cancel:before {
+    content: '\e809';
+} /* '' */
+.icon-cart:before {
+    content: '\e818';
+} /* '' */
+.icon-cc-amex:before {
+    content: '\e827';
+} /* '' */
+.icon-cc-discover:before {
+    content: '\e826';
+} /* '' */
+.icon-cc-mastercard:before {
+    content: '\e825';
+} /* '' */
+.icon-cc-paypal:before {
+    content: '\e828';
+} /* '' */
+.icon-cc-visa:before {
+    content: '\e824';
+} /* '' */
+.icon-ccw:before {
+    content: '\e822';
+} /* '' */
+.icon-cw:before {
+    content: '\e823';
+} /* '' */
+.icon-direction:before {
+    content: '\e814';
+} /* '' */
+.icon-down-circled:before {
+    content: '\e81a';
+} /* '' */
+.icon-down:before {
+    content: '\e821';
+} /* '' */
+.icon-facebook-circled:before {
+    content: '\e82e';
+} /* '' */
+.icon-facebook:before {
+    content: '\e82d';
+} /* '' */
+.icon-github-circled:before {
+    content: '\e82a';
+} /* '' */
+.icon-github:before {
+    content: '\e829';
+} /* '' */
+.icon-gplus-circled:before {
+    content: '\e830';
+} /* '' */
+.icon-gplus:before {
+    content: '\e82f';
+} /* '' */
+.icon-grid:before {
+    content: '\e806';
+} /* '' */
+.icon-help:before {
+    content: '\e80f';
+} /* '' */
+.icon-home:before {
+    content: '\e811';
+} /* '' */
+.icon-info:before {
+    content: '\e810';
+} /* '' */
+.icon-left-circled:before {
+    content: '\e81d';
+} /* '' */
+.icon-left:before {
+    content: '\e820';
+} /* '' */
+.icon-linkedin-circled:before {
+    content: '\e836';
+} /* '' */
+.icon-linkedin:before {
+    content: '\e835';
+} /* '' */
+.icon-location:before {
+    content: '\e813';
+} /* '' */
+.icon-mail:before {
+    content: '\e801';
+} /* '' */
+.icon-menu:before {
+    content: '\e83a';
+} /* '' */
+.icon-minus-circled:before {
+    content: '\e80e';
+} /* '' */
+.icon-minus:before {
+    content: '\e80d';
+} /* '' */
+.icon-ok-circled:before {
+    content: '\e808';
+} /* '' */
+.icon-ok:before {
+    content: '\e807';
+} /* '' */
+.icon-picture:before {
+    content: '\e805';
+} /* '' */
+.icon-pinterest-circled:before {
+    content: '\e832';
+} /* '' */
+.icon-pinterest:before {
+    content: '\e831';
+} /* '' */
+.icon-plus-circled:before {
+    content: '\e80c';
+} /* '' */
+.icon-plus:before {
+    content: '\e80b';
+} /* '' */
+.icon-right-circled:before {
+    content: '\e81c';
+} /* '' */
+.icon-right:before {
+    content: '\e81f';
+} /* '' */
+.icon-share:before {
+    content: '\e839';
+} /* '' */
+.icon-skype-circled:before {
+    content: '\e838';
+} /* '' */
+.icon-skype:before {
+    content: '\e837';
+} /* '' */
+.icon-sliders:before {
+    content: '\e817';
+} /* '' */
+.icon-trash:before {
+    content: '\e815';
+} /* '' */
+.icon-tumblr-circled:before {
+    content: '\e834';
+} /* '' */
+.icon-tumblr:before {
+    content: '\e833';
+} /* '' */
+.icon-twitter-circled:before {
+    content: '\e82c';
+} /* '' */
+.icon-twitter:before {
+    content: '\e82b';
+} /* '' */
+.icon-up-circled:before {
+    content: '\e81b';
+} /* '' */
+.icon-up:before {
+    content: '\e81e';
+} /* '' */
+.icon-user-add:before {
+    content: '\e803';
+} /* '' */
+.icon-user-remove:before {
+    content: '\e804';
+} /* '' */
+.icon-user:before {
+    content: '\e802';
+} /* '' */
+.icon-wrench:before {
+    content: '\e816';
+} /* '' */
+.icon-youtube-squared:before {
+    content: '\e83c';
+} /* '' */
+.icon-youtube:before {
+    content: '\e83b';
+} /* '' */
+
+/* Social Media Brand Colors */
+
+$blogger: #fb8f3d;
+$dribbble: #ea4c89;
+$facebook: #3b5998;
+$flickr: #ff0084;
+$forrst: #5b9a68;
+$foursquare: #0072b1;
+$github: #333;
+$gplus: #dd4b39;
+$instagram: #517fa4;
+$linkedin: #007bb6;
+$pinterest: #cb2027;
+$skype: #12a5f4;
+$soundcloud: #ff3a00;
+$stumbleupon: #eb4823;
+$tumblr: #32506d;
+$twitter: #00aced;
+$vimeo: #aad450;
+$vk: #45668e;
+$wordpress: #21759b;
+$yahoo: #7b0099;
+$youtube: #b00;
+
+.icon-blogger,
+.icon-blogger-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $blogger !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($blogger, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-dribbble,
+.socialColor.icon-dribbble-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $dribbble !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($dribbble, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-facebook,
+.socialColor.icon-facebook-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $facebook !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($facebook, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-flickr,
+.socialColor.icon-flickr-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $flickr !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($flickr, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-forrst,
+.socialColor.icon-forrst-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $forrst !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($forrst, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-foursquare,
+.socialColor.icon-foursquare-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $foursquare !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($foursquare, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-github,
+.socialColor.icon-github-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $github !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($github, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-gplus,
+.socialColor.icon-gplus-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $gplus !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($gplus, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-instagram,
+.socialColor.icon-instagram-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $instagram !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($instagram, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-linkedin,
+.socialColor.icon-linkedin-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $linkedin !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($linkedin, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-pinterest,
+.socialColor.icon-pinterest-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $pinterest !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($pinterest, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-skype,
+.socialColor.icon-skype-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $skype !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($skype, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-soundcloud,
+.socialColor.icon-soundcloud-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $soundcloud !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($soundcloud, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-stumbleupon,
+.socialColor.icon-stumbleupon-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $stumbleupon !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($stumbleupon, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-tumblr,
+.socialColor.icon-tumblr-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $tumblr !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($tumblr, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-twitter,
+.socialColor.icon-twitter-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $twitter !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($twitter, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-vimeo,
+.socialColor.icon-vimeo-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $vimeo !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($vimeo, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-vk,
+.socialColor.icon-vk-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $vk !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($vk, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-wordpress,
+.socialColor.icon-wordpress-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $wordpress !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($wordpress, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-yahoo,
+.socialColor.icon-yahoo-circled {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $yahoo !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($yahoo, 15%) !important;
+        }
+    }
+}
+
+.socialColor.icon-youtube,
+.socialColor.icon-youtube-squared {
+    &:before {
+        @extend %transition;
+
+        padding: $spacingXSm;
+
+        color: $youtube !important;
+    }
+    &:hover {
+        &:before {
+            color: darken($youtube, 15%) !important;
+        }
+    }
+}

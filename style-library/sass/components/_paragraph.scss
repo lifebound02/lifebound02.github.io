@@ -1,0 +1,28 @@
+p {
+    @include fontSize(16px);
+
+    margin: 10px 0 0;
+    padding: 0;
+
+    letter-spacing: .2px;
+
+    &.lead {
+        @include fontSize(20px);
+
+        letter-spacing: .5px;
+        font-family: $fontHighlight;
+
+        color: $colorGreyDarker;
+        text-shadow: 1px 1px 1px rgba(127, 127, 127, .3);
+
+        &--indented {
+            margin-left: $spacingLg;
+        }
+    }
+    &.subtle {
+        @include fontSize(12px);
+
+        margin: 0;
+        margin-left: $spacingBase;
+    }
+}

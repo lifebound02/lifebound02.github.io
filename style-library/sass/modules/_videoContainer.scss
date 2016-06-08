@@ -1,0 +1,19 @@
+.videoWrapper {
+    @extend %inlineFlex;
+
+    position: relative;
+
+    align-items: center;
+
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: $spacingXLg; 
+}
+.videoWrapper iframe {
+    position: relative;
+    display: block;
+
+    width: 100%;
+}

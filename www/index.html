@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<!-- meta -->
+	
+	<title>Life Bound - Academic Coaching</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style-library/css/main.css" />
+<script type="text/javascript" src="script-library/frontEnd-min.js"></script>
+	<!-- /meta -->
+</head>
+<body>
+	<header class="headerMain">
+	<div class="headerMain-content">
+		<div class="headerMain-social">
+			<a class="icon-facebook" href="//www.facebook.com/LifeBound/" target="_blank"></a>
+			<a class="icon-twitter" href="//twitter.com/LifeBound/" target="_blank"></a>
+			<a class="icon-linkedin" href="//www.linkedin.com/company/lifebound" target="_blank"></a>
+		</div>
+		<div class="headerMain-logo">
+			<a href="index.html">
+				<img src="image-library/logo.png">
+			</a>
+			<h1>Life<span>Bound</span><p>Coaching for College, Career, &amp; Life</p></h1>
+		</div>
+	</div>
+</header>
+	
+	
+<nav class="navMain">
+	<div class="mobileToggle icon-menu">Menu</div>
+	<ul>
+		<li><a href="index.html"  class="active" >Home</a></li>
+		<li><a href="about.html" >About Us</a></li>
+		<li><a href="training.html" >Training</a></li>
+		<li><a href="resources.html" >Resources</a></li>
+		<li><a href="consulting.html" >Consulting</a></li>
+		<li><a href="contact.html" >Contact Us</a></li>
+	</ul>
+</nav>
+	<main>
+		<div class="sliderMain">
+			<div>
+				<picture>
+					<img src="image-library\home-slider\image-01.jpg">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="image-library\home-slider\image-02.jpg">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="image-library\home-slider\image-03.jpg">
+				</picture>
+			</div>
+		</div>
+		<section>
+			<div class="row">
+				<div class="column">
+					<h2 class="underlined underlined--dot">LifeBound</h2>
+					<p class="lead">LifeBound is a social impact company that provides resources, coaching and training to drive learning and personal development for success in college, career and life.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<div class="vennDiagram">
+						<div class="venDiagram-circle venDiagram-circle--topLeft">
+							<h2>Coaching &amp; Professional Development Services</h2>
+							<a href="training.html"></a>
+						</div>
+						<div class="venDiagram-circle venDiagram-circle--topRight">
+							<h2>Print &amp; Digital Resources</h2>
+							<a href="resources.html"></a>
+						</div>
+						<div class="venDiagram-circle venDiagram-circle--bottomCenter">
+							<h2>Consulting Services</h2>
+							<a href="consulting.html"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="videoWrapper">
+					<iframe src="https://player.vimeo.com/video/169471822?byline=0&portrait=0" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="testimonialSlider">
+					<div>
+						<p class="h-h4">"This training program is of exceptional quality. It’s as good as any training opportunity I have ever been a part of over the past ten years. LifeBound uses a strong research base with knowledgeable and expert presenters."</p>
+						<p class="h-h6">- International Education Consultant, Author and Former School Administrator</p>
+					</div>
+					<div>
+						<p class="h-h4">"Excellent! One of the best trainings of my career."</p>
+						<p class="h-h6">- Lt. Colonel and Assistant Professor, Air Force Academy</p>
+					</div>
+					<div>
+						<p class="h-h4">"This is a great program that provides students with a holistic approach to the university experience."</p>
+						<p class="h-h6">- Faculty at University of New Mexico</p>
+					</div>
+					<div>
+						<p class="h-h4">"If I had the opportunity to go through Academic Coaching as a freshman entering college instead of a senior exiting it, I believe my college experience would have been radically different. In a very short period of time I thought more critically about my direction and pursuits than I ever had before and really came up with an action plan for attaining the goals I have for my future. I think that I could have avoided a lot of stress and worry over choosing my course of study and what I needed to accomplish to be able to present myself as an asset to future employers if I had gone through Academic Coaching at the start of college. The experience gave me a lot of confidence and drive to take control of creating my own opportunities for my future and pursuing my career aspirations upon graduation."</p>
+						<p class="h-h6">- Student, University of Denver</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footerMain">
+	<div class="row">
+		<div class="column">
+			<h5>LifeBound Inc, &copy; 2016</h5>	
+		</div>
+	</div>
+</footer>
+	<script type="text/javascript">
+		$('.venDiagram-circle').click(function(){
+			var $this = $(this);
+			var $link = $this.find('a').attr('href');
+			window.location.href = $link;
+		});
+	</script>
+</body>
+</html>
