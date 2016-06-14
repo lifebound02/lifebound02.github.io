@@ -39,21 +39,46 @@
 	</ul>
 </nav>
 	<main>
-		<div class="sliderMain">
-			<div>
-				<picture>
-					<img src="image-library\home-slider\image-01.jpg">
-				</picture>
-			</div>
-			<div>
-				<picture>
-					<img src="image-library\home-slider\image-02.jpg">
-				</picture>
-			</div>
-			<div>
-				<picture>
-					<img src="image-library\home-slider\image-03.jpg">
-				</picture>
+		<div class="row row--flush">
+			<div class="column">
+				<div class="contactSlider">
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-A1.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-A2.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-A3.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-B1.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-B2.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-B3.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-C1.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-C2.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-C3.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-unlimited1.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-unlimited2.jpg">
+					</div>
+					<div>
+						<img src="image-library\contact-slider\LifeBoundSlide-unlimited3.jpg">
+					</div>
+				</div>
 			</div>
 		</div>
 		<section>
@@ -120,6 +145,16 @@
 	</div>
 </footer>
 	<script type="text/javascript">
+		$('.contactSlider').slick({
+		    autoplay: true,
+		    autoplaySpeed: 900,
+			slidesToShow: 1,
+			arrows: false,
+			fade: true,
+			pauseOnHover: false,
+			pauseOnFocus: false
+		});
+		
 		$('.venDiagram-circle').click(function(){
 			var $this = $(this);
 			var $link = $this.find('a').attr('href');
